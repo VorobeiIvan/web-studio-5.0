@@ -1,19 +1,52 @@
-<header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+<header id="header" class="section--header">
+  <div class="container header flex">
+    <!--#region  logo -->
+    <div class="logo">
+      <a class="link" href="./index.html">
+        <span class="accent">Web</span>Studio
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+    </div>
+    <!--#endregion end logo -->
+    <!--#region navigation -->
+    <nav>
+      <ul class="flex navigation--header list">
+        <!-- home -->
+        <li class="list-item">
+          <a class="link active" href="#hero">Studio</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        <!-- portfolio -->
+        <li class="list-item">
+          <a class="link" href="#portfolio">Portfolio</a>
+        </li>
+        <!-- contacts -->
+        <li class="list-item">
+          <a class="link" href="#footer">Contacts</a>
         </li>
       </ul>
     </nav>
+    <!--#endregion end navigation -->
+    <!--#region contacts -->
+    <div>
+      <ul class="list list--contacts">
+        <!-- email -->
+        <li class="list-item">
+          <a class="link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <!-- phone -->
+        <li class="list-item">
+          <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+      </ul>
+    </div>
+    <!--#endregion end contacts -->
+    <!--#region mobile menu button -->
+    <button class="btn--open-modal btn">
+      <svg class="open-modal-icon icon" width="24" height="24">
+        <use href="../assets/icons/sprite.svg#icon-burger-menu" />
+      </svg>
+    </button>
+    <!--#endregion end mobile menu button -->
   </div>
 </header>
