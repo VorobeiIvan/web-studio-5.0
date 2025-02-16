@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/vanilla-app-template/",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "prettier --write \"src/**/*.{js,ts,jsx,tsx,json,css,scss,html}\""
   },
   "devDependencies": {
     "glob": "^11.0.0",
