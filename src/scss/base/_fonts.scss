@@ -1,14 +1,18 @@
-// @use '../utils/variables' as var;
+@use '../utils/variables' as var;
 
-// $fonts: var.$font-weights;
+$fonts: var.$font-weights;
+$font-families: var.$fonts-family;
 
-// @each $key, $value in $fonts {
-//   @font-face {
-//     font-family: 'Montserrat';
-//     src: url('../fonts/Montserrat-#{$key}.woff2') format('woff2'),
-//       url('../fonts/Montserrat-#{$key}.woff') format('woff');
-//     font-weight: $value;
-//     font-style: normal;
-//     font-display: swap;
-//   }
-// }
+@each $family-key, $family-name in $font-families {
+  @each $weight-key, $weight-value in $fonts {
+    @font-face {
+      font-family: '#{$family-name}';
+      src:
+        url('../fonts/#{$family-name}-#{$weight-key}.woff2') format('woff2'),
+        url('../fonts/#{$family-name}-#{$weight-key}.woff') format('woff');
+      font-weight: $weight-value;
+      font-style: normal;
+      font-display: swap;
+    }
+  }
+}

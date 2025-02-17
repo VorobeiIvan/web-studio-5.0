@@ -1,0 +1,37 @@
+@use '../utils/placeholders' as ph;
+@use '../utils/variables' as var;
+@use '../utils/mixins' as mx;
+@use '../utils/functions';
+
+.typography {
+  --main-title {
+    @include fn('%header-1');
+  }
+  --section-title {
+    @include fn('%header-2');
+  }
+  --blok-title {
+    @include fn('%header-3');
+  }
+  --input-placeholder {
+    @include fn('%placeholder');
+  }
+  --logo {
+    @include fn('%logo');
+  }
+  --text {
+    @include fn('%body');
+  }
+  --medium-text {
+    @include fn('%body-medium');
+  }
+  --small-text {
+    @include fn('%small-text');
+  }
+  --button-text {
+    @include fn('%button-text');
+  }
+  --link-text {
+    @include fn('%button-text');
+  }
+}

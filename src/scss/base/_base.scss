@@ -1,22 +1,16 @@
-@use '../utils/placeholders';
 @use '../utils/variables' as var;
 @use '../utils/functions' as fn;
-@use '../utils/mixins' as mx;
 
 body {
-  @extend %main-text;
+  //   @extend %main-text;
 
-  font-family: var.$main-font, sans-serif;
-  color: fn.get-color('light-secondary');
-  background-color: fn.get-color('dark-primary');
+  font-family: fn.get-font-family('primary'), sans-serif;
+  color: fn.get-color('slate');
+  background-color: fn.get-color('white');
 }
 
-// button {
-//   font-family: inherit;
-//   color: fn.get-color('current');
-//   cursor: pointer;
-// }
-
-// summary {
-//   list-style-type: none;
-// }
+button {
+  font-family: inherit;
+  color: fn.get-color('current');
+  cursor: pointer;
+}

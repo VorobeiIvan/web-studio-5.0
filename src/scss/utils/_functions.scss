@@ -1,0 +1,24 @@
+@use 'sass:map';
+@use './variables' as var;
+@use './mixins' as mx;
+
+
+// Функція для отримання color  з мапи var.$colors
+@function get-color($key) {
+  @return map.get(var.$colors, $key);
+}
+
+// Функція для отримання font-family  з мапи var.$fonts-family
+@function get-font-family($key) {
+  @return map.get(var.$fonts-family, $key);
+}
+
+// Функція для переведення `line-height` у відносне значення
+@function calc-line-height($font-size, $line-height) {
+  @return $line-height / $font-size;
+}
+
+// Функція для переведення `letter-spacing` у `em`
+@function calc-letter-spacing($font-size, $letter-spacing) {
+  @return $letter-spacing / $font-size * 1em;
+}

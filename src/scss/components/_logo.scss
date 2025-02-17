@@ -1,0 +1,6 @@
+@use '../utils/variables' as var;
+@use '../utils/functions' as fn;
+
+.typography--logo>span {
+  color: fn.get-color('iris');
+}
