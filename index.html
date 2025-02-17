@@ -6,55 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio 5.0</title>
     <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-CxLsUR8f.css">
   </head>
   <body>
-    <header id="header" class="section--header">
-  <div class="container header flex">
+    <header id="header" class="section">
+  <div class="container">
     <!--#region  logo -->
-    <div class="logo">
+    <div class="wrapper">
       <a class="link" href="./index.html">
-        <span class="accent">Web</span>Studio
+        <span class="text">Web</span>Studio
       </a>
     </div>
     <!--#endregion end logo -->
     <!--#region navigation -->
-    <nav>
-      <ul class="flex navigation--header list">
+    <nav class="navigation">
+      <ul class="list">
         <!-- home -->
-        <li class="list-item">
-          <a class="link active" href="#hero">Studio</a>
+        <li class="item">
+          <a class="link" href="#hero">Studio</a>
         </li>
         <!-- portfolio -->
-        <li class="list-item">
+        <li class="item">
           <a class="link" href="#portfolio">Portfolio</a>
         </li>
         <!-- contacts -->
-        <li class="list-item">
+        <li class="item">
           <a class="link" href="#footer">Contacts</a>
         </li>
       </ul>
     </nav>
     <!--#endregion end navigation -->
     <!--#region contacts -->
-    <div>
-      <ul class="list list--contacts">
+    <div class="wrapper">
+      <ul class="list">
         <!-- email -->
-        <li class="list-item">
+        <li class="item">
           <a class="link" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
         <!-- phone -->
-        <li class="list-item">
+        <li class="item">
           <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
         </li>
       </ul>
     </div>
     <!--#endregion end contacts -->
     <!--#region mobile menu button -->
-    <button class="btn--open-modal btn">
-      <svg class="open-modal-icon icon" width="24" height="24">
+    <button class="btn">
+      <svg class="icon" width="24" height="24">
         <use href="../assets/icons/sprite.svg#icon-burger-menu" />
       </svg>
     </button>
@@ -63,71 +62,71 @@
 </header>
 
     <main>
-      <section id="hero " class="section--hero flex">
+      <section id="hero " class="section">
   <div class="container">
-    <div class="hero-bg"></div>
-    <h1 class="title--hero">
-      Effective Solutions <span class="lowercase">for </span> Your Business
+    <div class="wrapper"></div>
+    <h1 class="title">
+      Effective Solutions <span class="text">for </span> Your Business
     </h1>
-    <button class="btn btn--prymary" type="button">Order Service</button>
+    <button class="btn" type="button">Order Service</button>
   </div>
 </section>
 
       <section id="feature" class="section">
   <div class="container">
-    <h2 class="visually-hidden">Feature</h2>
-    <ul class="list list--feature">
+    <h2 class="title ">Feature</h2>
+    <ul class="list">
       <!--#region strategy -->
-      <li class="flex list-item">
-        <div class="feature-icon">
+      <li class="item">
+        <div class="wrapper">
           <svg class="icon" width="64" height="64">
             <use href="../assets/icons/sprite.svg#icon-antenna" />
           </svg>
         </div>
         <h3 class="title">Strategy</h3>
-        <p class="medium">
+        <p class="text">
           Our goal is to identify the business problem to walk away with the
           perfect and creative solution.
         </p>
       </li>
       <!--#endregion end strategy -->
       <!--#region punctuality -->
-      <li class="list-item flex">
-        <div class="feature-icon">
+      <li class="item">
+        <div class="wrapper">
           <svg class="icon" width="64" height="64">
             <use href="../assets/icons/sprite.svg#icon-clock" />
           </svg>
         </div>
         <h3 class="title">Punctuality</h3>
-        <p class="medium">
+        <p class="text">
           Bring the key message to the brand's audience for the best price
           within the shortest possible time.
         </p>
       </li>
       <!--#endregion end punctuality -->
       <!--#region creativity -->
-      <li class="list-item flex">
-        <div class="feature-icon">
+      <li class="item">
+        <div class="wrapper">
           <svg class="icon" width="64" height="64">
             <use href="../assets/icons/sprite.svg#icon-diagram" />
           </svg>
         </div>
         <h3 class="title">Diligence</h3>
-        <p class="medium">
+        <p class="text">
           Research and confirm brands that present the strongest digital growth
           opportunities and minimize risk.
         </p>
       </li>
       <!--#endregion end creativity -->
       <!--#region technologies -->
-      <li class="list-item flex">
-        <div class="feature-icon">
+      <li class="item">
+        <div class="wrapper">
           <svg class="icon" width="64" height="64">
             <use href="../assets/icons/sprite.svg#icon-astronaut" />
           </svg>
         </div>
         <h3 class="title">Technologies</h3>
-        <p class="medium">
+        <p class="text">
           Design practice focused on digital experiences. We bring forth a deep
           passion for problem-solving.
         </p>
@@ -138,28 +137,29 @@
 </section>
 
       <section id="team" class="section">
-  <div class="container team flex">
+  <div class="container">
     <h2 class="title">Our Team</h2>
-    <ul class="list--team list flex">
+    <ul class="list">
       <!--#region Mark Guerrero -->
-      <li class="list-item">
+      <li class="item">
         <img
-          class="team-img"
+          class="img"
           src="../assets/images/mark-guerrero.webp"
           alt="Mark Guerrero"
           width="264"
           height="260"
+          loading="lazy"
         />
-        <div class="team-content">
-          <h3 class="title--secondary">Mark Guerrero</h3>
-          <p>Product Designer</p>
+        <div class="wrapper">
+          <h3 class="title">Mark Guerrero</h3>
+          <p class="text">Product Designer</p>
           <!--#region socials -->
-          <div class="socials">
-            <ul class="list list--socials flex">
+          <div class="wrapper">
+            <ul class="list">
               <!-- instagram -->
-              <li class="list-item socials-item">
+              <li class="item">
                 <a
-                  class="link flex"
+                  class="link"
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -170,9 +170,9 @@
                 </a>
               </li>
               <!-- twitter -->
-              <li class="list-item socials-item">
+              <li class="item">
                 <a
-                  class="link flex"
+                  class="link"
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -183,9 +183,9 @@
                 </a>
               </li>
               <!-- facebook -->
-              <li class="list-item socials-item">
+              <li class="item">
                 <a
-                  class="link flex"
+                  class="link"
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -196,9 +196,9 @@
                 </a>
               </li>
               <!-- linkedin -->
-              <li class="list-item socials-item">
+              <li class="item">
                 <a
-                  class="link flex"
+                  class="link"
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -215,24 +215,25 @@
       </li>
       <!--#endregion end Mark Guerrero -->
       <!--#region Tom Ford -->
-      <li class="list-item">
+      <li class="item">
         <img
-          class="team-img"
+          class="img"
           src="../assets/images/tom-ford.webp"
           alt="Tom Ford"
           width="264"
           height="260"
+          loading="lazy"
         />
-        <div class="team-content">
-          <h3 class="title--secondary">Tom Ford</h3>
-          <p class="team-text">Frontend Developer</p>
+        <div class="wrapper">
+          <h3 class="title">Tom Ford</h3>
+          <p class="text">Frontend Developer</p>
           <!--#region socials -->
-          <div class="socials">
-            <ul class="list list--socials flex">
+          <div class="wrapper">
+            <ul class="list">
               <!-- instagram -->
-              <li class="list-item socials-item">
+              <li class="item">
                 <a
-                  class="link flex"
+                  class="link"
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -243,9 +244,9 @@
                 </a>
               </li>
               <!-- twitter -->
-              <li class="list-item socials-item">
+              <li class="item">
                 <a
-                  class="link flex"
+                  class="link"
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -256,9 +257,9 @@
                 </a>
               </li>
               <!-- facebook -->
-              <li class="list-item socials-item">
+              <li class="item">
                 <a
-                  class="link flex"
+                  class="link"
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -269,9 +270,9 @@
                 </a>
               </li>
               <!-- linkedin -->
-              <li class="list-item socials-item">
+              <li class="item">
                 <a
-                  class="link flex"
+                  class="link"
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -288,24 +289,25 @@
       </li>
       <!--#endregion end Tom Ford -->
       <!--#region Camila Garcia -->
-      <li class="list-item">
+      <li class="item">
         <img
-          class="team-img"
+          class="img"
           src="../assets/images/camila-garcia.webp"
           alt="Camila Garcia"
           width="264"
           height="260"
+          loading="lazy"
         />
-        <div class="team-content">
-          <h3 class="title--secondary">Camila Garcia</h3>
-          <p>Marketing</p>
+        <div class="wrapper">
+          <h3 class="title">Camila Garcia</h3>
+          <p class="text">Marketing</p>
           <!--#region socials -->
-          <div class="socials">
-            <ul class="list list--socials flex">
+          <div class="wrapper">
+            <ul class="list">
               <!-- instagram -->
-              <li class="list-item socials-item">
+              <li class="item">
                 <a
-                  class="link flex"
+                  class="link"
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -316,9 +318,9 @@
                 </a>
               </li>
               <!-- twitter -->
-              <li class="list-item socials-item">
+              <li class="item">
                 <a
-                  class="link flex"
+                  class="link"
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -329,9 +331,9 @@
                 </a>
               </li>
               <!-- facebook -->
-              <li class="list-item socials-item">
+              <li class="item">
                 <a
-                  class="link flex"
+                  class="link"
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -342,9 +344,9 @@
                 </a>
               </li>
               <!-- linkedin -->
-              <li class="list-item socials-item">
+              <li class="item">
                 <a
-                  class="link flex"
+                  class="link"
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -361,24 +363,25 @@
       </li>
       <!--#endregion end Camila Garcia -->
       <!--#region Daniel Wilson -->
-      <li class="list-item">
+      <li class="item">
         <img
-          class="team-img"
+          class="img"
           src="../assets/images/daniel-wilson.webp"
           alt="Daniel Wilson"
           width="264"
           height="260"
+          loading="lazy"
         />
-        <div class="team-content">
-          <h3 class="title--secondary">Daniel Wilson</h3>
-          <p>UI Designer</p>
+        <div class="wrapper">
+          <h3 class="title">Daniel Wilson</h3>
+          <p class="text">UI Designer</p>
           <!--#region socials -->
-          <div class="socials">
-            <ul class="list list--socials flex">
+          <div class="wrapper">
+            <ul class="list">
               <!-- instagram -->
-              <li class="list-item socials-item">
+              <li class="item">
                 <a
-                  class="link flex"
+                  class="link"
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -389,9 +392,9 @@
                 </a>
               </li>
               <!-- twitter -->
-              <li class="list-item socials-item">
+              <li class="item">
                 <a
-                  class="link flex"
+                  class="link"
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -402,9 +405,9 @@
                 </a>
               </li>
               <!-- facebook -->
-              <li class="list-item socials-item">
+              <li class="item">
                 <a
-                  class="link flex"
+                  class="link"
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -415,9 +418,9 @@
                 </a>
               </li>
               <!-- linkedin -->
-              <li class="list-item socials-item">
+              <li class="item">
                 <a
-                  class="link flex"
+                  class="link"
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -438,184 +441,190 @@
 </section>
 
       <section id="portfolio" class="section">
-  <div class="container flex portfolio">
-    <h2 class="portfolio-title">Our Portfolio</h2>
-    <ul class="list flex list--portfolio">
+  <div class="container">
+    <h2 class="title">Our Portfolio</h2>
+    <ul class="list">
       <!--#region App project -->
-      <li class="list-item">
+      <li class="item">
         <a class="link" href="#" target="_blank" rel="noopener noreferrer">
           <img
-            class="portfolio-img"
+            class="img"
             src="../assets/images/banking-app.webp"
             srcset="../assets/images/banking-app@2x.webp 2x"
             alt="App project"
             width="288"
             height="280"
+            loading="lazy"
           />
-          <div class="description">
-            <h3 class="description-title visually-hidden">description</h3>
+          <div class="wrapper">
+            <h3 class="title">description</h3>
             <ul class="list">
-              <li class="list-item">
+              <li class="item">
                 14 Stylish and User-Friendly App Design Concepts
               </li>
-              <li class="list-item">Task Manager App</li>
-              <li class="list-item">Calorie Tracker App</li>
-              <li class="list-item">Exotic Fruit Ecommerce App</li>
-              <li class="list-item">Cloud Storage App</li>
+              <li class="item">Task Manager App</li>
+              <li class="item">Calorie Tracker App</li>
+              <li class="item">Exotic Fruit Ecommerce App</li>
+              <li class="item">Cloud Storage App</li>
             </ul>
           </div>
-          <div class="portfolio-content">
-            <h3 class="title--secondary">Banking App</h3>
+          <div class="wrapper">
+            <h3 class="title">Banking App</h3>
             <p>App</p>
           </div>
         </a>
       </li>
       <!--#endregion end App project -->
       <!--#region Marketing project -->
-      <li class="list-item">
+      <li class="item">
         <a class="link" href="#" target="_blank" rel="noopener noreferrer">
           <img
-            class="portfolio-img"
+            class="img"
             src="../assets/images/cashless-payment.webp"
             srcset="../assets/images/cashless-payment@2x.webp 2x"
             alt="App project"
             width="288"
             height="280"
+            loading="lazy"
           />
-          <div class="description">
-            <h3 class="description-title visually-hidden">description</h3>
+          <div class="wrapper">
+            <h3 class="title">description</h3>
             <ul class="list">
-              <li class="list-item">
+              <li class="item">
                 14 Stylish and User-Friendly App Design Concepts
               </li>
-              <li class="list-item">Task Manager App</li>
-              <li class="list-item">Calorie Tracker App</li>
-              <li class="list-item">Exotic Fruit Ecommerce App</li>
-              <li class="list-item">Cloud Storage App</li>
+              <li class="item">Task Manager App</li>
+              <li class="item">Calorie Tracker App</li>
+              <li class="item">Exotic Fruit Ecommerce App</li>
+              <li class="item">Cloud Storage App</li>
             </ul>
           </div>
-          <div class="portfolio-content">
-            <h3 class="title--secondary">Cashless Payment</h3>
+          <div class="wrapper">
+            <h3 class="title">Cashless Payment</h3>
             <p>Marketing</p>
           </div>
         </a>
       </li>
       <!--#endregion end Marketing project -->
       <!--#region Meditation App project -->
-      <li class="list-item">
+      <li class="item">
         <a class="link" href="#" target="_blank" rel="noopener noreferrer">
           <img
-            class="portfolio-img"
+            class="img"
             src="../assets/images/meditation-app.webp"
             srcset="../assets/images/meditation-app@2x.webp 2x"
             alt="App project"
             width="288"
             height="280"
+            loading="lazy"
           />
-          <div class="description">
-            <h3 class="description-title visually-hidden">description</h3>
+          <div class="wrapper">
+            <h3 class="title">description</h3>
             <ul class="list">
-              <li class="list-item">
+              <li class="item">
                 14 Stylish and User-Friendly App Design Concepts
               </li>
-              <li class="list-item">Task Manager App</li>
-              <li class="list-item">Calorie Tracker App</li>
-              <li class="list-item">Exotic Fruit Ecommerce App</li>
-              <li class="list-item">Cloud Storage App</li>
+              <li class="item">Task Manager App</li>
+              <li class="item">Calorie Tracker App</li>
+              <li class="item">Exotic Fruit Ecommerce App</li>
+              <li class="item">Cloud Storage App</li>
             </ul>
           </div>
-          <div class="portfolio-content">
-            <h3 class="title--secondary">Meditation App</h3>
+          <div class="wrapper">
+            <h3 class="title">Meditation App</h3>
             <p>App</p>
           </div>
         </a>
       </li>
       <!--#endregion end Meditation App project -->
       <!--#region Taxi Service project -->
-      <li class="list-item">
+      <li class="item">
         <a class="link" href="#" target="_blank" rel="noopener noreferrer">
           <img
-            class="portfolio-img"
+            class="img"
             src="../assets/images/taxi-service.webp"
             srcset="../assets/images/taxi-service@2x.webp 2x"
             alt="App project"
             width="288"
             height="280"
+            loading="lazy"
           />
-          <div class="description">
-            <h3 class="description-title visually-hidden">description</h3>
+          <div class="wrapper">
+            <h3 class="title">description</h3>
             <ul class="list">
-              <li class="list-item">
+              <li class="item">
                 14 Stylish and User-Friendly App Design Concepts
               </li>
-              <li class="list-item">Task Manager App</li>
-              <li class="list-item">Calorie Tracker App</li>
-              <li class="list-item">Exotic Fruit Ecommerce App</li>
-              <li class="list-item">Cloud Storage App</li>
+              <li class="item">Task Manager App</li>
+              <li class="item">Calorie Tracker App</li>
+              <li class="item">Exotic Fruit Ecommerce App</li>
+              <li class="item">Cloud Storage App</li>
             </ul>
           </div>
-          <div class="portfolio-content">
-            <h3 class="title--secondary">Taxi Service</h3>
+          <div class="wrapper">
+            <h3 class="title">Taxi Service</h3>
             <p>Marketing</p>
           </div>
         </a>
       </li>
       <!--#endregion end Taxi Service project -->
       <!--#region Screen Illustrations project -->
-      <li class="list-item">
+      <li class="item">
         <a class="link" href="#" target="_blank" rel="noopener noreferrer">
           <img
-            class="portfolio-img"
+            class="img"
             src="../assets/images/screen-illustrations.webp"
             srcset="../assets/images/screen-illustrations@2x.webp 2x"
             alt="App project"
             width="288"
             height="280"
+            loading="lazy"
           />
-          <div class="description">
-            <h3 class="description-title visually-hidden">description</h3>
+          <div class="wrapper">
+            <h3 class="title">description</h3>
             <ul class="list">
-              <li class="list-item">
+              <li class="item">
                 14 Stylish and User-Friendly App Design Concepts
               </li>
-              <li class="list-item">Task Manager App</li>
-              <li class="list-item">Calorie Tracker App</li>
-              <li class="list-item">Exotic Fruit Ecommerce App</li>
-              <li class="list-item">Cloud Storage App</li>
+              <li class="item">Task Manager App</li>
+              <li class="item">Calorie Tracker App</li>
+              <li class="item">Exotic Fruit Ecommerce App</li>
+              <li class="item">Cloud Storage App</li>
             </ul>
           </div>
-          <div class="portfolio-content">
-            <h3 class="title--secondary">Screen Illustrations</h3>
+          <div class="wrapper">
+            <h3 class="title">Screen Illustrations</h3>
             <p>Design</p>
           </div>
         </a>
       </li>
       <!--#endregion end Screen Illustrations project -->
       <!--#region Online Courses project -->
-      <li class="list-item">
+      <li class="item">
         <a class="link" href="#" target="_blank" rel="noopener noreferrer">
           <img
-            class="portfolio-img"
+            class="img"
             src="../assets/images/online-courses.webp"
             srcset="../assets/images/online-courses@2x.webp 2x"
             alt="App project"
             width="288"
             height="280"
+            loading="lazy"
           />
-          <div class="description">
-            <h3 class="description-title visually-hidden">description</h3>
+          <div class="wrapper">
+            <h3 class="title">description</h3>
             <ul class="list">
-              <li class="list-item">
+              <li class="item">
                 14 Stylish and User-Friendly App Design Concepts
               </li>
-              <li class="list-item">Task Manager App</li>
-              <li class="list-item">Calorie Tracker App</li>
-              <li class="list-item">Exotic Fruit Ecommerce App</li>
-              <li class="list-item">Cloud Storage App</li>
+              <li class="item">Task Manager App</li>
+              <li class="item">Calorie Tracker App</li>
+              <li class="item">Exotic Fruit Ecommerce App</li>
+              <li class="item">Cloud Storage App</li>
             </ul>
           </div>
-          <div class="portfolio-content">
-            <h3 class="title--secondary">Online Courses</h3>
+          <div class="wrapper">
+            <h3 class="title">Online Courses</h3>
             <p>Marketing</p>
           </div>
         </a>
@@ -626,31 +635,30 @@
 </section>
 
     </main>
-    <footer id="footer" class="section--footer">
-  <div class="container footer flex">
-    <div class="footer-content flex">
+    <footer id="footer" class="section">
+  <div class="container">
+    <div class="wrapper">
       <!--#region  logo -->
-      <div class="logo">
-        <a class="logo-text link" href="./index.html">
-          <span class="accent">Web</span>Studio
+      <div class="wrapper">
+        <a class="link" href="./index.html">
+          <span class="text">Web</span>Studio
         </a>
       </div>
       <!--#endregion end logo -->
-      <p>
+      <p class="text">
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
       </p>
     </div>
-    <div class="social-media">
-      <p class="medium">social media</p>
-      <p class="medium">social media</p>
+    <div class="wrapper">
+      <p class="text">social media</p>
       <!--#region socials -->
-      <div class="socials">
-        <ul class="list list--footer-socials flex">
+      <div class="wrapper">
+        <ul class="list">
           <!-- instagram -->
           <li class="list-item socials-item">
             <a
-              class="link flex"
+              class="link"
               href="#"
               target="_blank"
               rel="noopener noreferrer"
@@ -661,9 +669,9 @@
             </a>
           </li>
           <!-- twitter -->
-          <li class="list-item socials-item">
+          <li class="item">
             <a
-              class="link flex"
+              class="link"
               href="#"
               target="_blank"
               rel="noopener noreferrer"
@@ -674,9 +682,9 @@
             </a>
           </li>
           <!-- facebook -->
-          <li class="list-item socials-item">
+          <li class="item">
             <a
-              class="link flex"
+              class="link"
               href="#"
               target="_blank"
               rel="noopener noreferrer"
@@ -687,9 +695,9 @@
             </a>
           </li>
           <!-- linkedin -->
-          <li class="list-item socials-item">
+          <li class="item">
             <a
-              class="link flex"
+              class="link"
               href="#"
               target="_blank"
               rel="noopener noreferrer"
@@ -705,18 +713,18 @@
     </div>
 
     <!--#region subscribe -->
-    <div class="subscribe">
-      <label class="medium" for="subscribe-form">Subscribe</label>
-      <form class="subscribe-form" name="subscribe-form" id="subscribe-form">
+    <div class="wrapper">
+      <label class="label" for="subscribe-form">Subscribe</label>
+      <form class="form" name="subscribe-form" id="subscribe-form">
         <input
-          class="subscribe-input"
+          class="input"
           type="email"
           name="email"
           placeholder="E-mail"
         />
-        <button class="btn--secondary btn" type="submit">
+        <button class="btn" type="submit">
           Subscribe
-          <svg class="subscribe-icon icon" width="24" height="24">
+          <svg class="icon" width="24" height="24">
             <use href="../assets/icons/sprite.svg#icon-send" />
           </svg>
         </button>
@@ -728,20 +736,20 @@
 
 
     <!--#region modal burger menu  -->
-<div id="burger-modal" class="overlay visually-hidden">
-  <div class="modal">
+<div id="burger-modal" class="overlay">
+  <div class="modal-wrapper">
     <!-- close button -->
-    <button class="close-modal-btn btn">
-      <svg class="close-icon icon" width="24" height="24">
+    <button class="btn">
+      <svg class="icon" width="24" height="24">
         <use href="../assets/icons/sprite.svg#icon-close" />
       </svg>
     </button>
     <!--#region navigation -->
     <nav>
-      <ul class="list navigation--burger-menu">
+      <ul class="list">
         <!-- home -->
-        <li class="list-item">
-          <a class="link active" href="#hero">Studio</a>
+        <li class="item">
+          <a class="link" href="#hero">Studio</a>
         </li>
         <!-- portfolio -->
         <li>
@@ -755,28 +763,28 @@
     </nav>
     <!--#endregion end navigation -->
     <!--#region contacts -->
-    <div class="contacts">
-      <ul class="list contacts--burger-menu">
+    <div class="wrapper">
+      <ul class="list">
         <!-- email -->
-        <li class="list-item">
+        <li class="item">
           <a class="link" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
         <!-- phone -->
-        <li class="list-item">
+        <li class="item">
           <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
         </li>
       </ul>
     </div>
     <!--#endregion end contacts -->
     <!--#region socials -->
-    <div class="socials">
-      <ul class="list list--socials flex">
+    <div class="wrapper">
+      <ul class="list">
         <!-- instagram -->
-        <li class="list-item socials-item">
+        <li class="item">
           <a
-            class="link flex"
+            class="link"
             href="#"
             target="_blank"
             rel="noopener noreferrer"
@@ -787,9 +795,9 @@
           </a>
         </li>
         <!-- twitter -->
-        <li class="list-item socials-item">
+        <li class="item">
           <a
-            class="link flex"
+            class="link"
             href="#"
             target="_blank"
             rel="noopener noreferrer"
@@ -800,9 +808,9 @@
           </a>
         </li>
         <!-- facebook -->
-        <li class="list-item socials-item">
+        <li class="item">
           <a
-            class="link flex"
+            class="link"
             href="#"
             target="_blank"
             rel="noopener noreferrer"
@@ -813,9 +821,9 @@
           </a>
         </li>
         <!-- linkedin -->
-        <li class="list-item socials-item">
+        <li class="item">
           <a
-            class="link flex"
+            class="link"
             href="#"
             target="_blank"
             rel="noopener noreferrer"
