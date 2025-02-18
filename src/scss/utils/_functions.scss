@@ -2,23 +2,34 @@
 @use './variables' as var;
 @use './mixins' as mx;
 
-
-// Функція для отримання color  з мапи var.$colors
+// Функція для отримання кольору з мапи кольорів
 @function get-color($key) {
   @return map.get(var.$colors, $key);
 }
 
-// Функція для отримання font-family  з мапи var.$fonts-family
-@function get-font-family($key) {
+// Функція для отримання шрифта з мапи шрифтів
+@function get-font($key) {
   @return map.get(var.$fonts-family, $key);
 }
 
-// Функція для переведення `line-height` у відносне значення
-@function calc-line-height($font-size, $line-height) {
+// Функція для отримання розміру шрифта з мапи
+@function get-font-size($key) {
+  @return map.get(var.$font-sizes, $key);
+}
+
+// Функція для отримання ваги шрифта з мапи
+@function get-font-weight($key) {
+  @return map.get(var.$font-weights, $key);
+}
+
+// Функція для обчислення відносного line-height
+@function line-height($line-height, $font-size) {
+  // Обчислює line-height як коефіцієнт, залежно від розміру шрифта
   @return $line-height / $font-size;
 }
 
-// Функція для переведення `letter-spacing` у `em`
-@function calc-letter-spacing($font-size, $letter-spacing) {
-  @return $letter-spacing / $font-size * 1em;
+// Функція для обчислення letter-spacing у em
+@function letter-spacing($spacing, $font-size) {
+  // Обчислює letter-spacing в одиницях em, залежно від розміру шрифта
+  @return (($spacing / $font-size) * 1em);
 }

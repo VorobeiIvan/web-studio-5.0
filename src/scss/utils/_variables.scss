@@ -7,7 +7,7 @@ $breakpoints: (
   'lg': 1200px,
   //desktop
   'xl': 1440px,
-  'xxl': 1920px,
+  'xxl': 1920px
 );
 
 $colors: (
@@ -59,22 +59,24 @@ $fonts-family: (
 );
 
 $font-weights: (
-  'Regular': 400,
-  'Medium': 500,
-  'SemiBold': 600,
-  'Bold': 700,
-  'ExtraBold': 800,
+  'regular': 400,
+  'medium': 500,
+  'semiBold': 600,
+  'bold': 700,
+  'extraBold': 800,
 );
 
 $font-sizes: (
   'sm': 12px,
   'md': 16px,
-  'lg': 20px,
-  'xl': 36px,
-  'xxl': 56px,
+  'lg': 18px,
+  'xl': 20px,
+  'xxl': 36px,
+  'xxxl': 56px,
 );
 
 $easings: (
   'fast': 300ms ease,
   'slow': 600ms ease,
 );
+

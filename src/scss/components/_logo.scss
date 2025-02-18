@@ -1,6 +1,9 @@
-@use '../utils/variables' as var;
-@use '../utils/functions' as fn;
+// @use '../utils/variables' as var;
+// @use '../utils/functions' as fn;
+// @use '../utils/mixins' as mx;
 
-.typography--logo>span {
-  color: fn.get-color('iris');
-}
+// .typography--logo>span {
+//   @include mx.typography( 'secondary','lg', 'bold', 21px, 0.54px);
+//   text-transform: uppercase;
+//   color: fn.get-color('iris');
+// }

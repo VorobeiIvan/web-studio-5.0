@@ -1,16 +1,14 @@
-@use '../utils/variables' as var;
-@use '../utils/functions' as fn;
+// @use '../utils/variables' as var;
+// @use '../utils/functions' as fn;
+// @use './typography';
 
-body {
-  //   @extend %main-text;
+// body {
+//   @extend .typography;
+//   background-color: fn.get-color('white');
+// }
 
-  font-family: fn.get-font-family('primary'), sans-serif;
-  color: fn.get-color('slate');
-  background-color: fn.get-color('white');
-}
-
-button {
-  font-family: inherit;
-  color: fn.get-color('current');
-  cursor: pointer;
-}
+// // button {
+// //   font-family: inherit;
+// //   color: fn.get-value('colors', 'current');
+// //   cursor: pointer;
+// // }
