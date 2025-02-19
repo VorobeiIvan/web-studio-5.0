@@ -1,14 +1,23 @@
-// @use '../utils/variables' as var;
-// @use '../utils/functions' as fn;
-// @use './typography';
+@use '../utils/variables' as var;
+@use '../utils/functions' as fn;
+@use '../utils/placeholders' as *;
 
-// body {
-//   @extend .typography;
-//   background-color: fn.get-color('white');
-// }
+body {
+  @extend %main-text;
+  background-color: fn.get-color('white');
+  color: fn.get-color('slate');
+}
 
-// // button {
-// //   font-family: inherit;
-// //   color: fn.get-value('colors', 'current');
-// //   cursor: pointer;
-// // }
+button {
+  font-family: inherit;
+  color: fn.get-color('current');
+  cursor: pointer;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+

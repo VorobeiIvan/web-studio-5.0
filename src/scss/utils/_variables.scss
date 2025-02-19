@@ -65,7 +65,10 @@ $font-weights: (
   'bold': 700,
   'extraBold': 800,
 );
-
+$font-style: (
+  'normal': 'normal',
+  'italic': 'italic',
+);
 $font-sizes: (
   'sm': 12px,
   'md': 16px,
@@ -79,4 +82,3 @@ $easings: (
   'fast': 300ms ease,
   'slow': 600ms ease,
 );
-

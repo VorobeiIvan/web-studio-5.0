@@ -1,0 +1,34 @@
+@use '../utils/variables' as var;
+@use '../utils/functions' as fn;
+@use '../utils/placeholders' as *;
+
+.navigation {
+  grid-area: navigation;
+}
+.nav-link {
+  @extend %medium-text;
+  @extend %hover-focus;
+  position: relative;
+  color: fn.get-color('navy-blue');
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.active {
+  color: fn.get-color('ocean');
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 10;
+    display: block;
+    bottom: -24px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: fn.get-color('ocean');
+  }
+}

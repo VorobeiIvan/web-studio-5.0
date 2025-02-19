@@ -1,0 +1,68 @@
+@use '../utils/variables' as var;
+@use '../utils/functions' as fn;
+@use '../utils/mixins' as mx;
+@use '../utils/placeholders' as *;
+
+.header {
+    max-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+
+  background: fn.get-color('white');
+  border-bottom: 1px solid fn.get-color('cornflower');
+  box-shadow:
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
+  .logo {
+    flex-shrink: 0;
+  }
+
+  .navigation,
+  .contacts {
+    display: none;
+  }
+
+  .burger-menu-btn {
+    flex-shrink: 0;
+  }
+
+  @include mx.mq('md') {
+    .burger-menu-btn {
+      display: none;
+    }
+
+    .navigation,
+    .contacts {
+      display: block;
+    }
+
+    .contacts .list {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+
+  @include mx.mq('lg') {
+    padding: 24px 156px;
+
+    .logo {
+      margin-right: 76px;
+    }
+
+    .navigation {
+      flex-grow: 1;
+    }
+
+    .contacts .list {
+      @include mx.typography('primary', 'md', 'regular', 24px, 0.32px);
+      flex-direction: row;
+      gap: 40px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@use '../utils/variables' as var;
+@use '../utils/mixins' as mx;
+@use '../utils/functions' as fn;
+
+%main-text {
+  @include mx.typography('primary', 'md', 'regular', 24px, 0.32px);
+}
+
+%logo-text {
+  @include mx.typography('secondary', 'lg', 'bold', 21px, 0.54px);
+  text-transform: uppercase;
+}
+
+%medium-text {
+  font-weight: 500;
+  // @include mx.typography('primary', 'md', 'medium', 24px, 0.32px);
+}
+
+%small-text {
+  @include mx.typography('primary', 'sm', 'regular', 14px, 0.48px);
+}
+
+%hover-focus {
+  &:hover,
+  &:focus {
+    color: fn.get-color('ocean');
+  }
+}

@@ -1,0 +1,15 @@
+@use '../utils/variables' as var;
+@use '../utils/functions' as fn;
+@use '../utils/placeholders' as *;
+
+.contacts {
+  grid-area: contacts;
+}
+.contacts-link {
+  @extend %small-text;
+  @extend %hover-focus;
+  color: inherit;
+  
+}
+
+

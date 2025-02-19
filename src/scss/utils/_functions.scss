@@ -1,6 +1,5 @@
 @use 'sass:map';
 @use './variables' as var;
-@use './mixins' as mx;
 
 // Функція для отримання кольору з мапи кольорів
 @function get-color($key) {
@@ -20,6 +19,10 @@
 // Функція для отримання ваги шрифта з мапи
 @function get-font-weight($key) {
   @return map.get(var.$font-weights, $key);
+}
+// Функція для отримання ваги стилю з мапи
+@function get-font-style($key) {
+  @return map.get(var.$font-style, $key);
 }
 
 // Функція для обчислення відносного line-height

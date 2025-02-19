@@ -1,10 +1,47 @@
-@use '../utils/variables' as var;
-@use '../utils/functions' as fn;
+@use 'sass:map';
+@use 'sass:list';
+@use 'variables' as var;
+@use 'functions' as fn;
 
-@mixin typography($font, $size, $weight, $line-height, $spacing) {
+
+/// Використання:
+/// @include typography($font: 'Arial', $size: 16px, $weight: 700);
+@mixin typography(
+  $font: fn.get-font('primary'),
+  $size: fn.get-font-size('md'),
+  // $style: fn.get-font-style('normal'),
+  $weight: fn.get-font-weight('regular'),
+  $line-height: 24px,
+  $spacing: 0.32px
+) {
   font-family: fn.get-font($font);
   font-size: fn.get-font-size($size);
   font-weight: fn.get-font-weight($weight);
-  line-height: fn.line-height(fn.get-font-size($size), $line-height);
+  // font-style: fn.get-font-style($style);
+  line-height: fn.line-height($line-height, fn.get-font-size($size));
   letter-spacing: fn.letter-spacing($spacing, fn.get-font-size($size));
+}
+
+@mixin mq($bp: sm, $type: min, $is-retina: false) {
+  @if map.has-key(var.$breakpoints, $bp) {
+    $width: map.get(var.$breakpoints, $bp);
+
+    @if $type == max {
+      $width: $width - 0.02px;
+    }
+
+    @media only screen and (#{$type}-width: $width) {
+      @if $is-retina {
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          @content;
+        }
+      } @else {
+        @content;
+      }
+    }
+  } @else {
+    @error "";
+  }
 }
