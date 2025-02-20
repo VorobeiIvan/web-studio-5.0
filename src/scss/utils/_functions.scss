@@ -28,7 +28,7 @@
 // Функція для обчислення відносного line-height
 @function line-height($line-height, $font-size) {
   // Обчислює line-height як коефіцієнт, залежно від розміру шрифта
-  @return $line-height / $font-size;
+  @return ($line-height / $font-size);
 }
 
 // Функція для обчислення letter-spacing у em

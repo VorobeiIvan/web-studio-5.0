@@ -3,7 +3,6 @@
 @use 'variables' as var;
 @use 'functions' as fn;
 
-
 /// Використання:
 /// @include typography($font: 'Arial', $size: 16px, $weight: 700);
 @mixin typography(
@@ -42,6 +41,22 @@
       }
     }
   } @else {
-    @error "";
+    @error " No value could be retrieved from `#{$bp}`. "
+      + "Please make sure it is defined in `$breakpoints` map.";
   }
+}
+
+@mixin responsive-bg($image, $image-retina: null) {
+  background-image: url(#{$image});
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @if $image-retina {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url(#{$image});
+    }
+  }
+
+  @content;
 }

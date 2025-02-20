@@ -2,6 +2,7 @@ $breakpoints: (
   //mobile
   'xs': 320px,
   'sm': 375px,
+  'sl': 468px,
   //tablet
   'md': 768px,
   'lg': 1200px,
@@ -82,3 +83,11 @@ $easings: (
   'fast': 300ms ease,
   'slow': 600ms ease,
 );
+
+$bg-mob: '../../assets/images/bg-mob.webp';
+$bg-tablet: '../../assets/images/bg-tablet.webp';
+$bg-desktop: '../../assets/images/bg-desktop.webp';
+
+$bg-retina-mob: '../../assets/images/bg-mob@2x.webp';
+$bg-retina-tablet: '../../assets/images/bg-tablet@2x.webp';
+$bg-retina-desktop: '../../assets/images/bg-desktop@2x.webp';

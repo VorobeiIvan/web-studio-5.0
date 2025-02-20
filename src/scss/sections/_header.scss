@@ -4,7 +4,7 @@
 @use '../utils/placeholders' as *;
 
 .header {
-    max-height: 72px;
+  max-height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,7 +40,7 @@
       display: block;
     }
 
-    .contacts .list {
+    .contacts-list {
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -59,7 +59,7 @@
       flex-grow: 1;
     }
 
-    .contacts .list {
+    .contacts-list {
       @include mx.typography('primary', 'md', 'regular', 24px, 0.32px);
       flex-direction: row;
       gap: 40px;

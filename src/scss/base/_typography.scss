@@ -1,5 +1,42 @@
-// @use '../utils/placeholders';
-// @use '../utils/variables' as var;
-// @use '../utils/mixins' as mx;
-// @use '../utils/functions' as fn;
+@use '../utils/variables' as var;
+@use '../utils/functions' as fn;
+@use '../utils/mixins' as mx;
+@use '../utils/placeholders' as *;
 
+.main-title {
+  max-width: 200px;
+  @extend %section-title;
+  color: fn.get-color('white');
+  text-align: center;
+  @include mx.mq(sl, min) {
+    max-width: 496px;
+  }
+  @include mx.mq(md, min) {
+    @include mx.typography('primary', 'xxxl', 'bold', 60px, 1.12px);
+  }
+}
+.section-title {
+  @extend %section-title;
+  color: fn.get-color('navy-blue');
+  text-align: center;
+}
+
+.block-title {
+  @extend %block-title;
+  color: fn.get-color('navy-blue');
+}
+
+.link-text {
+  @extend %link-text;
+  color: fn.get-color('iris');
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}

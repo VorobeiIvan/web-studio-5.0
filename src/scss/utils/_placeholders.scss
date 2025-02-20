@@ -20,9 +20,36 @@
   @include mx.typography('primary', 'sm', 'regular', 14px, 0.48px);
 }
 
-%hover-focus {
+%main-title {
+  @include mx.typography('primary', 'xxxl', 'bold', 60px, 1.12px);
+}
+
+%section-title {
+  @include mx.typography('primary', 'xxl', 'bold', 40px, 0.72px);
+}
+
+%block-title {
+  @include mx.typography('primary', 'xl', 'medium', 24px, 0.4px);
+}
+
+%button-text {
+  @include mx.typography('primary', 'md', 'medium', 24px, 0.64px);
+}
+
+%link-text {
+  @include mx.typography('primary', 'sm', 'regular', 16px, 0.48px);
+}
+
+%text-h-f {
   &:hover,
   &:focus {
     color: fn.get-color('ocean');
+  }
+}
+
+%bg-h-f {
+  &:hover,
+  &:focus {
+    background-color: fn.get-color('ocean');
   }
 }

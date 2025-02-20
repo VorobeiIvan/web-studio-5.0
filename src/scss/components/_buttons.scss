@@ -1,4 +1,21 @@
-// # Кнопки
+@use '../utils/variables' as var;
+@use '../utils/functions' as fn;
+@use '../utils/placeholders' as *;
+
 .burger-menu-btn {
   grid-area: 'burger';
+}
+
+.hero-btn {
+  @extend %button-text;
+  @extend %bg-h-f;
+
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  color: fn.get-color('white');
+  background: fn.get-color('iris');
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }

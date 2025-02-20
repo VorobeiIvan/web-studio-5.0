@@ -7,7 +7,7 @@
 }
 .nav-link {
   @extend %medium-text;
-  @extend %hover-focus;
+  @extend %text-h-f;
   position: relative;
   color: fn.get-color('navy-blue');
 }

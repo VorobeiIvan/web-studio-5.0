@@ -7,9 +7,6 @@
 }
 .contacts-link {
   @extend %small-text;
-  @extend %hover-focus;
+  @extend %text-h-f;
   color: inherit;
-  
 }
-
-
