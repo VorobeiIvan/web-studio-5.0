@@ -4,10 +4,17 @@
 
 .logo {
   @extend %logo-text;
-  grid-area: logo;
-  color: fn.get-color('navy-blue');
+  // grid-area: logo;
 }
 
 .logo span {
   color: fn.get-color('iris');
+}
+
+.header .logo {
+  color: fn.get-color('navy-blue');
+}
+
+.footer .logo {
+  color: fn.get-color('cloud');
 }

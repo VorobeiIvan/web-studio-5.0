@@ -1,4 +1,5 @@
 @use 'sass:map';
+@use 'sass:math';
 @use './variables' as var;
 
 // Функція для отримання кольору з мапи кольорів
@@ -28,11 +29,11 @@
 // Функція для обчислення відносного line-height
 @function line-height($line-height, $font-size) {
   // Обчислює line-height як коефіцієнт, залежно від розміру шрифта
-  @return ($line-height / $font-size);
+  @return math.div($line-height, $font-size);
 }
 
 // Функція для обчислення letter-spacing у em
 @function letter-spacing($spacing, $font-size) {
   // Обчислює letter-spacing в одиницях em, залежно від розміру шрифта
-  @return (($spacing / $font-size) * 1em);
+  @return (math.div($spacing, $font-size) * 1em);
 }

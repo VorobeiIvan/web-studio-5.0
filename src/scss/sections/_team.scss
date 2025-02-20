@@ -1,0 +1,42 @@
+@use '../utils/variables' as var;
+@use '../utils/functions' as fn;
+@use '../utils/mixins' as mx;
+@use '../utils/placeholders' as *;
+
+.team {
+  padding: 96px 28px;
+  text-align: center;
+  background: fn.get-color('cloud');
+  @include mx.mq(md, min) {
+    padding: 96px 108px;
+  }
+  @include mx.mq(xl, min) {
+    padding: 120px 156px;
+  }
+}
+
+.team-list {
+  @extend %flex-center;
+  margin-top: 72px;
+  flex-wrap: wrap;
+  gap: 72px;
+  @include mx.mq(md, min) {
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+}
+.team-item {
+  border-radius: 0px 0px 4px 4px;
+  background: fn.get-color('white');
+  box-shadow:
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+}
+.team-content-wrapper {
+  padding: 32px 16px;
+  min-width: 264px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

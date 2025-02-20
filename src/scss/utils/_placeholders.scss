@@ -53,3 +53,16 @@
     background-color: fn.get-color('ocean');
   }
 }
+
+%fbg-h-f {
+  &:hover,
+  &:focus {
+    background-color: fn.get-color('green');
+  }
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -24,6 +24,7 @@
 .block-title {
   @extend %block-title;
   color: fn.get-color('navy-blue');
+  text-align: center;
 }
 
 .link-text {
@@ -39,4 +40,11 @@
 
 .lowercase {
   text-transform: lowercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+
+.medium {
+  @extend %medium-text;
 }

@@ -1,0 +1,33 @@
+@use '../utils/variables' as var;
+@use '../utils/functions' as fn;
+@use '../utils/mixins' as mx;
+@use '../utils/placeholders' as *;
+
+.footer {
+  @extend %flex-center;
+  flex-wrap: wrap;
+  gap: 72px;
+
+  color: fn.get-color('cloud');
+  background-color: fn.get-color('navy-blue');
+
+  padding: 96px 16px;
+  @include mx.mq(md, min) {
+    padding: 96px 108px;
+  }
+  @include mx.mq(xl, min) {
+    padding: 100px 156px;
+  }
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  @include mx.mq(md, min) {
+    max-width: 264px;
+  }
+  @include mx.mq(xl, min) {
+    padding: 100px 156px;
+  }
+}

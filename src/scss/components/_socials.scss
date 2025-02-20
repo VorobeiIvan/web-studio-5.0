@@ -1,0 +1,27 @@
+@use '../utils/variables' as var;
+@use '../utils/functions' as fn;
+@use '../utils/mixins' as mx;
+@use '../utils/placeholders' as *;
+.socials {
+}
+.socials-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.socials-item {
+  @extend %bg-h-f;
+  @extend %flex-center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: fn.get-color('iris');
+}
+
+.socials-icon {
+  @extend %flex-center;
+}
+
+.footer .socials-item {
+  @extend %fbg-h-f;
+}

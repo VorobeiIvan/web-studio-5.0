@@ -3,19 +3,31 @@
 @use '../utils/placeholders' as *;
 
 .burger-menu-btn {
-  grid-area: 'burger';
+  // grid-area: 'burger';
 }
 
 .hero-btn {
   @extend %button-text;
   @extend %bg-h-f;
+  @extend %flex-center;
 
-  display: inline-flex;
   padding: 16px 32px;
-  align-items: flex-start;
   gap: 10px;
   border-radius: 4px;
   color: fn.get-color('white');
   background: fn.get-color('iris');
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.footer-btn {
+  @extend %button-text;
+  @extend %fbg-h-f;
+  @extend %flex-center;
+
+  border-radius: 4px;
+  color: fn.get-color('white');
+  background: fn.get-color('iris');
+
+  padding: 8px 24px;
+  gap: 16px;
 }

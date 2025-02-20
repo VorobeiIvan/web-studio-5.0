@@ -1,0 +1,110 @@
+@use '../utils/variables' as var;
+@use '../utils/functions' as fn;
+@use '../utils/mixins' as mx;
+@use '../utils/placeholders' as *;
+
+.portfolio {
+  padding: 96px 16px;
+
+  @include mx.mq(xl, min) {
+    padding: 120px 156px;
+  }
+}
+
+.portfolio-list {
+  @extend %flex-center;
+  flex-wrap: wrap;
+  gap: 48px;
+  margin-top: 72px;
+  @include mx.mq(md, min) {
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  @include mx.mq(xl, min) {
+    row-gap: 48px;
+    column-gap: 24px;
+  }
+}
+.portfolio-img {
+  position: relative;
+  width: 288px;
+  height: 280px;
+  @include mx.mq(md, min) {
+    width: 356px;
+    height: 300px;
+  }
+  @include mx.mq(xl, min) {
+    width: 360px;
+  }
+}
+.portfolio-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 32px 16px;
+  border-right: 1px solid fn.get-color('cornflower');
+  border-bottom: 1px solid fn.get-color('cornflower');
+  border-left: 1px solid fn.get-color('cornflower');
+}
+
+.portfolio-description-wrapper {
+  width: 288px;
+  height: 280px;
+  padding: 40px 32px;
+  color: fn.get-color('cloud');
+  background-color: fn.get-color('iris');
+
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+
+  @include mx.mq(md, min) {
+    width: 356px;
+    height: 300px;
+  }
+  @include mx.mq(xl, min) {
+    width: 360px;
+  }
+}
+
+.portfolio-link {
+  &:hover,
+  &:focus {
+    background: var(--white, #fff);
+    box-shadow:
+      0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    transform: translateY(8px);
+
+    .portfolio-img {
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+    }
+    .portfolio-description-wrapper {
+      padding: 40px 32px;
+      position: static;
+      white-space: normal;
+      overflow: visible;
+      border: initial;
+      clip: auto;
+      clip-path: none;
+      margin: initial;
+    }
+  }
+}

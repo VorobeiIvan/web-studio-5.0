@@ -3,7 +3,7 @@
 @use '../utils/placeholders' as *;
 
 .contacts {
-  grid-area: contacts;
+  // grid-area: contacts;
 }
 .contacts-link {
   @extend %small-text;

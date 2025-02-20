@@ -1,19 +1,63 @@
+@use '../utils/variables' as var;
+@use '../utils/functions' as fn;
+@use '../utils/mixins' as mx;
+@use '../utils/placeholders' as *;
+
 .feature {
+  padding: 96px 16px;
+
+  @include mx.mq(xl, min) {
+    padding: 120px 156px;
+  }
+  .feature-icon-wrapper {
+    display: none;
+  }
+
+  @include mx.mq(xl, min) {
+    .feature-icon-wrapper {
+      display: block;
+      padding: 24px 100px;
+      margin-bottom: 8px;
+      border-radius: 4px;
+      border: 1px solid fn.get-color('light-slate');
+      background: fn.get-color('cloud');
+    }
+  }
 }
-.section-title {
-}
+
 .feature-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 72px;
+  @include mx.mq(md, min) {
+    row-gap: 72px;
+    column-gap: 24px;
+  }
 }
 .feature-item {
+  max-width: 288px;
+  @include mx.mq(md, min) {
+    max-width: 356px;
+  }
+  @include mx.mq(xl, min) {
+    max-width: 264px;
+  }
 }
-.feature-icon-wrapper {
+.feature .block-title {
+  margin-bottom: 8px;
+  @include mx.mq(md, min) {
+    text-align: left;
+  }
+  @include mx.mq(xl, max) {
+    @include mx.typography('primary', 'xxl', 'bold', 40px, 0.72px);
+  }
 }
 
-.block-title {
-}
-
-.text {
-}
-
-.icon {
-}
+// .feature-icon-wrapper .icon {
+//   &:hover {
+//     stroke: fn.get-color('ocean');
+//     stroke-width: 0.5px;
+//   }
+// }
