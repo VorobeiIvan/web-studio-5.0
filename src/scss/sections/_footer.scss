@@ -7,13 +7,16 @@
   @extend %flex-center;
   flex-wrap: wrap;
   gap: 72px;
-
   color: fn.get-color('cloud');
   background-color: fn.get-color('navy-blue');
-
   padding: 96px 16px;
+  align-items: flex-start;
   @include mx.mq(md, min) {
     padding: 96px 108px;
+    row-gap: 72px;
+    column-gap: 24px;
+    justify-content: space-between;
+
   }
   @include mx.mq(xl, min) {
     padding: 100px 156px;
@@ -23,11 +26,11 @@
 .footer-content {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  align-items: center;
+  gap: 16px;
+  max-width: 288px;
   @include mx.mq(md, min) {
+    align-items: flex-start;
     max-width: 264px;
-  }
-  @include mx.mq(xl, min) {
-    padding: 100px 156px;
   }
 }

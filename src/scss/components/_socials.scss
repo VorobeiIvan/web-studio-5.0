@@ -2,12 +2,12 @@
 @use '../utils/functions' as fn;
 @use '../utils/mixins' as mx;
 @use '../utils/placeholders' as *;
-.socials {
-}
+
 .socials-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 24px;
 }
 .socials-item {
   @extend %bg-h-f;
@@ -24,4 +24,16 @@
 
 .footer .socials-item {
   @extend %fbg-h-f;
+  gap: 16px;
+}
+.footer-socials {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+
+  @include mx.mq(md, min) {
+    align-items: flex-start;
+  }
+
 }

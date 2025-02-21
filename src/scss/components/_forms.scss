@@ -1,0 +1,45 @@
+@use '../utils/variables' as var;
+@use '../utils/functions' as fn;
+@use '../utils/mixins' as mx;
+@use '../utils/placeholders' as *;
+
+.subscribe-label {
+  @extend %flex-center;
+  flex-direction: column;
+  gap: 16px;
+  @include mx.mq(md, min) {
+    align-items: flex-start;
+  }
+}
+.subscribe-form {
+  @extend %flex-center;
+  gap: 16px;
+  flex-direction: column;
+
+  @include mx.mq(md, min) {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  @include mx.mq(xl, min) {
+    gap: 24px;
+  }
+}
+
+.subscribe-input {
+  @include mx.typography('primary', 'sm', 'regular', 24px, 0.48px);
+  color: fn.get-color('white');
+  width: 264px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  padding: 8px 16px;
+  border: 1px solid fn.get-color('white');
+  border-radius: 4px;
+  opacity: 0.3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}

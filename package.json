@@ -1,11 +1,11 @@
 {
-  "name": "vanilla-app-template",
+  "name": "web-studio-5.0",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.4.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "dev": "vite --open --port 3000",
+    "build": "vite build --base=/web-studio-5.0/",
     "preview": "vite preview",
     "format": "prettier --write 'src/**/*.{js,ts,jsx,tsx,json,css,scss,html}'"
   },
