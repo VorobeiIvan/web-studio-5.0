@@ -12,6 +12,15 @@
   z-index: 999;
   background-color: fn.get-color('white');
   overflow-y: hidden;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.overlay.is-open {
+  opacity: 1;
+  visibility: visible;
 }
 
 .burger-modal-wrapper {

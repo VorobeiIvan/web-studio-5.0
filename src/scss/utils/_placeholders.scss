@@ -37,6 +37,13 @@
 
 %link-text {
   @include mx.typography('primary', 'sm', 'regular', 16px, 0.48px);
+  color: var(--IRIS, #4d5ae5);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
 }
 
 %text-h-f {

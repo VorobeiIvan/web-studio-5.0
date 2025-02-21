@@ -26,12 +26,12 @@
     display: none;
   }
 
-  .burger-menu-btn {
+  .burger-btn {
     flex-shrink: 0;
   }
 
   @include mx.mq('md') {
-    .burger-menu-btn {
+    .burger-btn {
       display: none;
     }
 

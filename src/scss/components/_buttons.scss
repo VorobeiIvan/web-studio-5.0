@@ -2,33 +2,37 @@
 @use '../utils/functions' as fn;
 @use '../utils/placeholders' as *;
 
-.hero-btn {
+button {
   @extend %button-text;
-  @extend %bg-h-f;
   @extend %flex-center;
+  font-family: inherit;
+  color: fn.get-color('white');
+  cursor: pointer;
+}
+
+.hero-btn {
+  @extend %bg-h-f;
 
   padding: 16px 32px;
   gap: 10px;
+
   border-radius: 4px;
-  color: fn.get-color('white');
   background: fn.get-color('iris');
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .footer-btn {
-  @extend %button-text;
   @extend %fbg-h-f;
-  @extend %flex-center;
+  padding: 8px 24px;
+  gap: 16px;
 
   border-radius: 4px;
   color: fn.get-color('white');
   background: fn.get-color('iris');
-
-  padding: 8px 24px;
-  gap: 16px;
 }
 
-.close-burger-btn {
+.close-burger-btn,
+.close-btn {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -46,4 +50,16 @@
       fill: fn.get-color('white');
     }
   }
+}
+
+.form-modal-btn {
+  @extend %bg-h-f;
+  min-width: 169px;
+  padding: 16px 32px;
+  gap: 10px;
+
+  border-radius: 4px;
+  background: fn.get-color('iris');
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
 }

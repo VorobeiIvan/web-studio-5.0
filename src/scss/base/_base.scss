@@ -8,11 +8,6 @@ body {
   color: fn.get-color('slate');
 }
 
-button {
-  font-family: inherit;
-  color: fn.get-color('current');
-  cursor: pointer;
-}
 
 .icon {
   display: flex;

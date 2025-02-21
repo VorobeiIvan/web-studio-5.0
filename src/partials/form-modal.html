@@ -1,0 +1,95 @@
+<!--#region form modal -->
+<div id="form-modal" class="overlay">
+  <div class="form-modal-wrapper">
+    <!-- close button -->
+    <button class="close-btn" aria-label="Close">
+      <svg class="icon close-icon" width="8" height="8" aria-hidden="true">
+        <use href="../assets/icons/sprite.svg#icon-close" />
+      </svg>
+    </button>
+    <p class="form-description">
+      Leave your contacts and we will call you back
+    </p>
+    <form>
+      <ul class="form-list">
+        <li class="form-item">
+          <svg
+            class="icon input-icon"
+            width="18"
+            height="24"
+            aria-hidden="true"
+          >
+            <use href="../assets/icons/sprite.svg#icon-person" />
+          </svg>
+          <label class="label" for="name">
+            Name
+            <input class="input" name="name" id="name" type="text" />
+          </label>
+        </li>
+        <li class="form-item">
+          <svg
+            class="icon input-icon"
+            width="18"
+            height="24"
+            aria-hidden="true"
+          >
+            <use href="../assets/icons/sprite.svg#icon-phone" />
+          </svg>
+          <label class="label" for="phone">
+            Phone
+            <input class="input" name="phone" id="phone" type="tel" />
+          </label>
+        </li>
+        <li class="form-item">
+          <svg
+            class="icon input-icon"
+            width="18"
+            height="24"
+            aria-hidden="true"
+          >
+            <use href="../assets/icons/sprite.svg#icon-email" />
+          </svg>
+          <label class="label" for="email">
+            Email
+            <input class="input" name="email" id="email" type="email" />
+          </label>
+        </li>
+        <li class="form-item">
+          <label class="label" for="comment">
+            Comment
+            <textarea
+              class="textarea"
+              name="comment"
+              id="comment"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+        </li>
+        <li class="checkbox">
+          <input
+            class="checkbox-input"
+            name="terms-checkbox"
+            id="terms-checkbox"
+            type="checkbox"
+            aria-label="Accept privacy policy"
+          />
+          <label for="terms-checkbox" class="label">
+            I accept the terms and conditions of the
+            <a
+              class="privacy-policy"
+              href="/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Privacy Policy
+            </a>
+          </label>
+        </li>
+      </ul>
+      <button class="form-modal-btn" type="submit" aria-label="Send form">
+        Send
+      </button>
+    </form>
+  </div>
+</div>
+<!--#endregion end form modal -->
