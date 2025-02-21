@@ -2,9 +2,7 @@
 @use '../utils/functions' as fn;
 @use '../utils/placeholders' as *;
 
-.navigation {
-  // grid-area: navigation;
-}
+
 .nav-link {
   @extend %medium-text;
   @extend %text-h-f;
@@ -31,3 +29,4 @@
     background: fn.get-color('ocean');
   }
 }
+

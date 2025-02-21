@@ -1,0 +1,48 @@
+@use '../utils/variables' as var;
+@use '../utils/functions' as fn;
+@use '../utils/mixins' as mx;
+@use '../utils/placeholders' as *;
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: fn.get-color('white');
+  overflow-y: hidden;
+}
+
+.burger-modal-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 100%;
+  height: 100%;
+  padding: 72px 16px 40px 16px;
+}
+
+.burger-modal-wrapper {
+  .navigation {
+    margin-bottom: auto;
+    .nav-list {
+      flex-direction: column;
+      align-items: flex-start;
+      @extend %section-title;
+    }
+    .active {
+      &::after {
+        display: none;
+      }
+    }
+  }
+  .contacts-list {
+    display: flex;
+    gap: 24px;
+    flex-direction: column-reverse;
+  }
+  .contacts-link {
+    @extend %block-title;
+  }
+}

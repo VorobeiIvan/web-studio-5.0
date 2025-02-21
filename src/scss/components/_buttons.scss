@@ -2,10 +2,6 @@
 @use '../utils/functions' as fn;
 @use '../utils/placeholders' as *;
 
-.burger-menu-btn {
-  // grid-area: 'burger';
-}
-
 .hero-btn {
   @extend %button-text;
   @extend %bg-h-f;
@@ -30,4 +26,24 @@
 
   padding: 8px 24px;
   gap: 16px;
+}
+
+.close-burger-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 1;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: rgba(fn.get-color('cornflower'), 0.1);
+  border: 1px solid rgba(fn.get-color('navy-blue'), 0.1);
+
+  &:hover,
+  &:focus {
+    background-color: fn.get-color('ocean');
+    border: none;
+    .close-icon {
+      fill: fn.get-color('white');
+    }
+  }
 }
