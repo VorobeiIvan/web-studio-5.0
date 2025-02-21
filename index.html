@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/web-studio-5.0/assets/favicon-C6N8NLcs.ico" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio 5.0</title>
     <script type="module" crossorigin src="/web-studio-5.0/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/web-studio-5.0/assets/index-Bh0WBp9K.css">
+    <link rel="stylesheet" crossorigin href="/web-studio-5.0/assets/index-BjZFYE_y.css">
   </head>
-  <body>
+  <body class="body">
     <header id="header" class="header">
   <!--#region  logo -->
   <a class="logo" href="./index.html"> <span>Web</span>Studio </a>
@@ -50,12 +50,13 @@
   </div>
   <!--#endregion end contacts -->
   <!--#region mobile menu button -->
-  <button class="burger-menu-btn">
+  <button class="burger-btn">
     <svg class="icon" width="24" height="24">
       <use href="../assets/icons/sprite.svg#icon-burger-menu" />
     </svg>
   </button>
   <!--#endregion end mobile menu button -->
+  
 </header>
 
     <main>
@@ -765,100 +766,103 @@
 </footer>
 
 
-    <!--#region modal burger menu  -->
-<div id="burger-modal" class="overlay visually-hidden">
-  <div class="modal-wrapper">
+    
+<!--#region modal burger menu  -->
+<div id="burger-modal" class="overlay">
+<div class="burger-modal-wrapper">
     <!-- close button -->
-    <button class="btn">
-      <svg class="icon" width="24" height="24">
+    <button class="close-burger-btn">
+      <svg class="icon close-icon" width="8" height="8">
         <use href="../assets/icons/sprite.svg#icon-close" />
       </svg>
     </button>
     <!--#region navigation -->
-    <nav>
-      <ul class="list">
+    <nav class="navigation">
+      <ul class="nav-list">
         <!-- home -->
-        <li class="item">
-          <a class="link" href="#hero">Studio</a>
+        <li class="nav-item">
+          <a class="nav-link active" href="#hero">Studio</a>
         </li>
         <!-- portfolio -->
-        <li>
-          <a class="link" href="#portfolio">Portfolio</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
         </li>
         <!-- contacts -->
-        <li>
-          <a class="link" href="#contacts">Contacts</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">Contacts</a>
         </li>
       </ul>
     </nav>
     <!--#endregion end navigation -->
     <!--#region contacts -->
-    <div class="wrapper">
-      <ul class="list">
+    <div class="contacts">
+      <ul class="contacts-list">
         <!-- email -->
-        <li class="item">
-          <a class="link" href="mailto:info@devstudio.com"
+        <li class="contacts-item">
+          <a class="contacts-link" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
         <!-- phone -->
-        <li class="item">
-          <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        <li class="contacts-item">
+          <a class="contacts-link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
         </li>
       </ul>
     </div>
     <!--#endregion end contacts -->
     <!--#region socials -->
-    <div class="wrapper">
-      <ul class="list">
+    <div class="socials">
+      <ul class="socials-list">
         <!-- instagram -->
-        <li class="item">
+        <li class="socials-item">
           <a
-            class="link"
+            class="socials-link"
             href="#"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <svg class="icon" width="24" height="24">
+            <svg class="socials-icon" width="24" height="24">
               <use href="../assets/icons/sprite.svg#icon-instagram" />
             </svg>
           </a>
         </li>
         <!-- twitter -->
-        <li class="item">
+        <li class="socials-item">
           <a
-            class="link"
+            class="socials-link"
             href="#"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <svg class="icon" width="24" height="24">
+            <svg class="socials-icon" width="24" height="24">
               <use href="../assets/icons/sprite.svg#icon-twitter" />
             </svg>
           </a>
         </li>
         <!-- facebook -->
-        <li class="item">
+        <li class="socials-item">
           <a
-            class="link"
+            class="socials-link"
             href="#"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <svg class="icon" width="24" height="24">
+            <svg class="socials-icon" width="24" height="24">
               <use href="../assets/icons/sprite.svg#icon-facebook" />
             </svg>
           </a>
         </li>
         <!-- linkedin -->
-        <li class="item">
+        <li class="socials-item">
           <a
-            class="link"
+            class="socials-link"
             href="#"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <svg class="icon" width="24" height="24">
+            <svg class="socials-icon" width="24" height="24">
               <use href="../assets/icons/sprite.svg#icon-linkedin" />
             </svg>
           </a>
@@ -868,7 +872,102 @@
     <!--#endregion end socials -->
   </div>
 </div>
-<!--#endregion end modal burger menu  -->
+  <!--#endregion end modal burger menu  -->
+    <!--#region form modal -->
+<div id="form-modal" class="overlay">
+  <div class="form-modal-wrapper">
+    <!-- close button -->
+    <button class="close-btn" aria-label="Close">
+      <svg class="icon close-icon" width="8" height="8" aria-hidden="true">
+        <use href="../assets/icons/sprite.svg#icon-close" />
+      </svg>
+    </button>
+    <p class="form-description">
+      Leave your contacts and we will call you back
+    </p>
+    <form>
+      <ul class="form-list">
+        <li class="form-item">
+          <svg
+            class="icon input-icon"
+            width="18"
+            height="24"
+            aria-hidden="true"
+          >
+            <use href="../assets/icons/sprite.svg#icon-person" />
+          </svg>
+          <label class="label" for="name">
+            Name
+            <input class="input" name="name" id="name" type="text" />
+          </label>
+        </li>
+        <li class="form-item">
+          <svg
+            class="icon input-icon"
+            width="18"
+            height="24"
+            aria-hidden="true"
+          >
+            <use href="../assets/icons/sprite.svg#icon-phone" />
+          </svg>
+          <label class="label" for="phone">
+            Phone
+            <input class="input" name="phone" id="phone" type="tel" />
+          </label>
+        </li>
+        <li class="form-item">
+          <svg
+            class="icon input-icon"
+            width="18"
+            height="24"
+            aria-hidden="true"
+          >
+            <use href="../assets/icons/sprite.svg#icon-email" />
+          </svg>
+          <label class="label" for="email">
+            Email
+            <input class="input" name="email" id="email" type="email" />
+          </label>
+        </li>
+        <li class="form-item">
+          <label class="label" for="comment">
+            Comment
+            <textarea
+              class="textarea"
+              name="comment"
+              id="comment"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+        </li>
+        <li class="checkbox">
+          <input
+            class="checkbox-input"
+            name="terms-checkbox"
+            id="terms-checkbox"
+            type="checkbox"
+            aria-label="Accept privacy policy"
+          />
+          <label for="terms-checkbox" class="label">
+            I accept the terms and conditions of the
+            <a
+              class="privacy-policy"
+              href="/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Privacy Policy
+            </a>
+          </label>
+        </li>
+      </ul>
+      <button class="form-modal-btn" type="submit" aria-label="Send form">
+        Send
+      </button>
+    </form>
+  </div>
+</div>
+<!--#endregion end form modal -->
 
   </body>
 </html>
