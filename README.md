@@ -1,4 +1,6 @@
-https://www.markdownguide.org/basic-syntax/ https://prettier.io/docs/
+https://www.markdownguide.org/basic-syntax/ 
+
+https://prettier.io/docs/
 
 https://transfonter.org/
 
